@@ -29,6 +29,11 @@ public class UtilitiesTest {
         assertArrayEquals(new int[]{0, 1, 2, 3}, Utilities.generateNumberSeries(0, 3));
         assertArrayEquals(new int[]{10, 9, 8}, Utilities.generateNumberSeries(10, 8));
         assertArrayEquals(new int[]{99, 98, 97, 96, 95}, Utilities.generateNumberSeries(99, 95));
+
+        assertArrayEquals(new int[]{2, 4, 6}, Utilities.generateNumberSeries(2, 7, 2));
+        assertArrayEquals(new int[]{0, 3}, Utilities.generateNumberSeries(0, 3, 3));
+        assertArrayEquals(new int[]{10, 8}, Utilities.generateNumberSeries(10, 8, 2));
+        assertArrayEquals(new int[]{99, 96}, Utilities.generateNumberSeries(99, 95, 3));
     }
 
     @Test
